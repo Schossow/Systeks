@@ -1,0 +1,54 @@
+/****************************************
+# Control Panel - Module for login
+# Brifcase: https://www.techteks.net
+# Date: 10/26/2020
+# @author Alejandro Quezada
+# @version v1.0.0
+#*****************************************/
+body{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+nav{
+  background-color: #161d27;
+  color: #fff;
+}
+.padding-topbottom{
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+h1,h2,h3,h4,h5{
+  text-align: center;
+}
+ion-icon{
+  color: #fff;
+  vertical-align: middle;
+}
+.dropdown-item ion-icon{
+  font-size: 20px;
+  color: #161d27;
+  vertical-align: middle;
+}
+.table-style{
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.table-style thead{
+  color: #fff;
+  background-color: #161d27;
+}
+.table-style th{
+  text-align: center;
+}
+.table-style td{
+  text-align: center;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input[type=number] { -moz-appearance:textfield; }
+.error{
+  color: red;
+}
