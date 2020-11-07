@@ -92,7 +92,7 @@
         <div class="card">
           <h3 class="card-header">Registry</h3>
           <div class="card-body">
-            <form id="" action="" method="POST">
+            <form id="amount_form" action="" method="POST">
               <div class="form-group">
                 <label>Name:</label>
                 <input type="text" id="name" name="name" class="form-control" placeholder="Name">
