@@ -177,17 +177,18 @@ $('#registry_amount').on('click', function(e){
     return false;
   }
   if(type=="income"){
-    alert("Income");
+    alert("Introduciendo datos del income a la base de datos...");
+    alert("Imprimiendo tabla de incomes actualizada...");
     $.ajax({
-      url: 'list/income-list.php',
+      url: 'modules/set-income.php',
       type: 'POST',
       data: $('#amount_form').serialize(),
       success: function(res){
-        if(res==""){
+        if(res!=""){
           $('#mensage_error').removeClass('alert-success').addClass('alert-danger').css('display','block').html(res);
         }else{
           $('#mensage_error').removeClass('alert-danger').addClass('alert-success').css('display','block').html("Successful income registration");
-          $('#income_table').html(res); 
+          $('#income_table').html(res);
         }
       }
     });
