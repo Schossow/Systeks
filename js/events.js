@@ -188,6 +188,9 @@ $('#registry_acount').on('click', function(e){
           $('#acount_form').trigger("reset");
           $('#mensage_error').removeClass('alert-danger').addClass('alert-success').css('display','block').html(`Successful income registration<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>`);
           $('#income_table').html(res);
+          $.post("modules/balance.php", function(res){
+            $('#balance').html(res);
+          });
         }
       }
     });
@@ -202,7 +205,10 @@ $('#registry_acount').on('click', function(e){
         }else{
           $('#acount_form').trigger("reset");
           $('#mensage_error').removeClass('alert-danger').addClass('alert-success').css('display','block').html(`Successful expenses registration<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>`);
-          $('#expenses_table').html(res); 
+          $('#expenses_table').html(res);
+          $.post("modules/balance.php", function(res){
+            $('#balance').html(res);
+          });
         }
       }
     });

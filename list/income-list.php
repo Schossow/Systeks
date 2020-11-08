@@ -16,8 +16,8 @@
               <td><strong>'.$income['id'].'</strong></td>
               <td>'.$income['name'].'</td>
               <td>'.$income['date'].'</td>
-              <td style="color:mediumblue;">+$'.number_format($income['amount'],2).'</td>
-              <td><ion-icon class="btn btn-outline-primary btn-sm" style="margin-right: 5px;" name="eye"></ion-icon><ion-icon class="btn btn-outline-danger btn-sm" name="trash-sharp"></ion-icon></td>
+              <td style="color:mediumblue;"><strong>+$'.number_format($income['amount'],2).'</strong></td>
+              <td><ion-icon class="btn btn-outline-primary btn-sm" name="eye"></ion-icon><ion-icon class="btn btn-outline-danger btn-sm" name="trash-sharp"></ion-icon></td>
             </tr>';
     } // End while
   }

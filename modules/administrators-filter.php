@@ -34,7 +34,7 @@
                 <td>'.$admins['full_name'].'</td>
                 <td>'.$admins['email'].'</td>
                 <td>'.$admins['user_type'].'</td>
-                <td><ion-icon class="btn btn-outline-primary btn-sm" style="margin-right: 5px;" name="eye"></ion-icon><ion-icon class="btn btn-outline-danger btn-sm" name="trash-sharp"></ion-icon></td>
+                <td><ion-icon class="btn btn-outline-primary btn-sm" name="eye"></ion-icon><ion-icon class="btn btn-outline-danger btn-sm" name="trash-sharp"></ion-icon></td>
               </tr>';
       }else{
         echo '<tr>

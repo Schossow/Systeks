@@ -28,16 +28,19 @@
     include("templates/navbar.php");
   ?>
   <div class="alert alert-danger alert-dismissible fade show" id="mensage_error" style="text-align: center;display:none;" role="alert"></div>
-
+  <div class="container">
+    <div id="balance">
+      <h3>BALANCE: </h3>
+    </div>
+  </div>
   <div class="container">
     <div class="row">
 
       <div class="col-sm-4">
         <div class="table-style">
+          <h3>Income</h3>
           <div class="table-responsive">
             <table class="table table-sm table-hover">
-              <caption><span class="icon-table"></span> Income</caption>
-
               <thead>
 
                 <tr>
@@ -58,14 +61,15 @@
 
             </table>
           </div>
+          <caption><ion-icon name="analytics-outline"></ion-icon> Income</caption>
         </div>
       </div>
 
       <div class="col-sm-4">
         <div class="table-style">
+          <h3>Expenses</h3>
           <div class="table-responsive">
             <table class="table table-sm table-hover">
-              <caption><span class="icon-table"></span> Expenses</caption>
               <thead>
 
                 <tr>
@@ -85,6 +89,7 @@
               </tbody>
             </table>
           </div>
+          <caption><ion-icon name="analytics-outline"></ion-icon> Expenses</caption>
         </div>
       </div>
 

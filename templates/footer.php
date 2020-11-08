@@ -8,7 +8,7 @@
 #*****************************************
 -->
 
-  <div class="container" style="text-align:center;">
+  <div class="container" style="text-align:center;padding-top:20px;">
     <p>
       &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | developed by <a href="https://techteks.net" target="_blank" >TechTeks.net</a>
     </p>
