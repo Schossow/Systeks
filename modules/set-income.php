@@ -27,15 +27,15 @@ if(isset($_POST['name'])){
 
     # Print all list of income
     $query = "SELECT * FROM income ORDER BY id DESC";
-    $result = mysqli_query($dbQuery, $query) or die ("Error in the query of incomes -> 2".mysqli_error($dbQuery));
+    $result = mysqli_query($dbQuery, $query) or die ("Error in the query of incomes -> ".mysqli_error($dbQuery));
     
     while($income = mysqli_fetch_array($result)){
       echo '<tr>
               <td><strong>'.$income['id'].'</strong></td>
               <td>'.$income['name'].'</td>
               <td>'.$income['date'].'</td>
-              <td>'.$income['amount'].'</td>
-              <td>a</td>
+              <td style="color:navy;">$'.number_format($income['amount'],2).'</td>
+              <td><ion-icon class="btn btn-outline-primary btn-sm" style="margin-right: 5px;" name="eye"></ion-icon><ion-icon class="btn btn-outline-danger btn-sm" name="trash-sharp"></ion-icon></td>
             </tr>';
     } // End while
   }

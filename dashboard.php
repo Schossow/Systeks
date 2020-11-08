@@ -12,7 +12,7 @@
 
   if(!isset($_SESSION['type'])){
     header('Location: login.php');
-  }
+  }else{
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +27,7 @@
   <?php
     include("templates/navbar.php");
   ?>
-  <div class="alert alert-danger text-center" id="mensage_error" style="display:none;" role="alert"></div>
+  <div class="alert alert-danger alert-dismissible fade show" id="mensage_error" style="text-align: center;display:none;" role="alert"></div>
 
   <div class="container">
     <div class="row">
@@ -92,7 +92,7 @@
         <div class="card">
           <h3 class="card-header">Registry</h3>
           <div class="card-body">
-            <form id="amount_form" action="" method="POST">
+            <form id="acount_form" action="" method="POST">
               <div class="form-group">
                 <label>Name:</label>
                 <input type="text" id="name" name="name" class="form-control" placeholder="Name">
@@ -116,7 +116,7 @@
                 <input type="number" id="amount" name="amount" class="form-control" placeholder="Amount">
                 <small class="error" id="amount_error"></small>
               </div>
-              <input type="button" id="registry_amount" class="btn btn-success" value="Registry" name="registry_amount">
+              <input type="button" id="registry_acount" class="btn btn-success" value="Registry" name="registry_acount">
             </form>
           </div>
         </div>
@@ -126,6 +126,7 @@
   
   <?php
     include("templates/footer.php");
+  }
   ?>
 </body>
 </html>

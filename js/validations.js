@@ -330,7 +330,7 @@ function validateCompanyName(name,name_error){
 /*============================================
     VALIDATE IF IS A INCOME OR A EXPENSES
 =============================================*/
-function validateTypeAmount(type, type_error){
+function validateTypeAcount(type, type_error){
   this.type = type;
   this.type_error = type_error;
   if(this.type!="income"&&this.type!="expenses"){
