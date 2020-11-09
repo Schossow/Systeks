@@ -31,10 +31,10 @@
     }else{
   ?>
   <div class="alert alert-danger text-center" id="mensage_error" style="display:none;" role="alert"></div>
-  <div class="container" style="padding-top:20px;">
+  <div class="container" style="padding-top:10px;">
     <form class="form-inline" id="form_filter_admins" action="" method="">
-      <input type="text" class="form-control mr-sm-2" id="admins_key" placeholder="Key" style="margin:2px 8px 2px 8px;" name="key">
-      <select class="custom-select mr-sm-2" id="admins_filter" style="margin:2px 8px 2px 8px;" name="filter">
+      <input type="text" class="form-control mr-sm-2" id="admins_key" placeholder="Key" style="margin:2px 8px 0 8px;" name="key">
+      <select class="custom-select mr-sm-2" id="admins_filter" style="margin:2px 8px 0 8px;" name="filter">
         <option value="0">All</option>
         <option value="1">Username</option>
         <option value="2">Type</option>

@@ -30,7 +30,7 @@ ion-icon{
   vertical-align: middle;
 }
 .table-style{
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .table-responsive{
   overflow-y: scroll;
@@ -43,7 +43,7 @@ ion-icon{
   }
   .table-style{
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 0;
   }
 }
 .table-style thead{

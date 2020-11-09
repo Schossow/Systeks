@@ -33,7 +33,7 @@
           <li class="nav-item dropdown pad-lr-5 hover-bb">
             <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><ion-icon name="person-sharp"></ion-icon><?php echo ' '.$_SESSION['username']; ?></a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href=""><ion-icon name="person-circle"></ion-icon> Admin accont</a>                       
+              <a class="dropdown-item" id="admin_acount" href=""><ion-icon name="person-circle"></ion-icon> Admin accont</a>                       
               <a class="dropdown-item" href="admin-registry.php"><ion-icon name="person-add"></ion-icon> New admin accont</a>                       
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="modules/logout.php"><ion-icon name="log-out-outline"></ion-icon> Logout</a>

@@ -216,3 +216,19 @@ $('#registry_acount').on('click', function(e){
     $('#mensage_error').removeClass('alert-success').addClass('alert-danger').css('display','block').html(`Error trying to save the acount.<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>`);
   }
 });
+/*======================================
+    Event to show admin information
+========================================*/
+$('#admin_acount').on('click', function(e){
+  e.preventDefault();
+  location.href="admin-information.php";
+});
+/*=========================================
+    Event to show edit admin information
+===========================================*/
+$('#edit').on('click', function(e){
+  e.preventDefault();
+  $.post("views/admin-edit.php", function(res){
+    $('#admin').html(res);
+  });
+});
